@@ -44,8 +44,8 @@
             </ul>
             <hr>
 
-            <div class="card">
-                <div class="card-block">
+            <div class="container center">
+                <div class="text-muted py-5">
                     <form method="POST" action="/post/{{$kijk->id }}/comments">
                         {{ csrf_field() }}
                         <div class="form-group">
@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-outline-info"> Submit</button>
+                            <button type="submit" class="btn btn-primary"> Submit</button>
                             <input type="hidden" name="post_id" id="post_id" value="{{$kijk->id}}">
                         </div>
 

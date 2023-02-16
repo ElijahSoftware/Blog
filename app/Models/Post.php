@@ -14,6 +14,10 @@ class Post extends Model
         return $this->hasMany(comment::class);
     }
 
+    public function user(){
+        return $this->belongsTo(user::class);
+    }
+
     public function commentoevogen($body, $post_id){
         // $this->comments()->create(compact('body', 'post_id'));
         $comment = new Comment();
