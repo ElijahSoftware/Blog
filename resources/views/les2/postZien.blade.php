@@ -15,7 +15,7 @@
 
     <title>Post Zien</title>
 </head>
-<<body>
+<body>
     <header>
         @include('les2.postCo.header')
     </header>
