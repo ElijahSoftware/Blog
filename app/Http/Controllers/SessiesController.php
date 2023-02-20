@@ -8,6 +8,7 @@ class SessiesController extends Controller
 {
     public function maken () {
 
+        return view('les2/login');
 
     }
 
@@ -17,6 +18,6 @@ class SessiesController extends Controller
         auth()->logout();
 
 
-        return redirect('/post');
+        return redirect('les2/blogPost/post');
     }
 }
