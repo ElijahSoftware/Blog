@@ -36,7 +36,7 @@ class PostController extends Controller
         $post->title = request('title');
         $post->body = request('body');
         
-        $post->user_id = request()->user->id;
+        $post->user_id = request()->user->$id;
         $post->save();
 
         return redirect('post');
